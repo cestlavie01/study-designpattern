@@ -1,0 +1,24 @@
+package com.cobus.builder;
+
+public class Pizza {
+	private String dough = "";
+	private String sauce = "";
+	private String topping = "";
+
+	public void setDough(String dough) {
+		this.dough = dough;
+	}
+
+	public void setSauce(String sauce) {
+		this.sauce = sauce;
+	}
+
+	public void setTopping(String topping) {
+		this.topping = topping;
+	}
+	
+	public String toString() {
+		return String.format("[dough:%s][sauce:%s][topping:%s]",
+				this.dough, this.sauce, this.topping);
+	}
+}
